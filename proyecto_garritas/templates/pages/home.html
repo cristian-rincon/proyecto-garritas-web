@@ -1,1 +1,48 @@
 {% extends "base.html" %}
+{% block content %}
+{% load static i18n %}
+<!-- Banner -->
+<section>
+    <div class="my-4 rounded-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 p-3">
+                <h1 class="display-1 fw-bold">Cuidamos a tu mascota</h1>
+                <p class="fs-4">Brindamos espacios cómodos y confortables para que tu peludito esté tranquilo</p>
+                <div class="d-inline">
+                    <a href="{% url 'about' %}" class="btn btn-primary rounded-pill px-4 py-2">Conócenos</a>
+                    <a href="/" class="btn">Contáctanos</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 p-3">
+                <img class="img-fluid rounded-pill" src="{% static 'images/commons/cat_1.jpg' %}" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--  -->
+<hr class="m-5">
+
+<section>
+    <div class="row">
+        <div class="col-sm-12 col-md-4">
+            <!-- Image placeholder -->
+            <img class="img-fluid rounded-pill" src="{% static 'images/commons/cat_2.jpg' %}" alt="" srcset="">
+        </div>
+        <div class="col-sm-12 col-md-4 text-center">
+            <p class="fs-5">¿Cómo podemos ayudarte?</p>
+            <h2 class="fs-1">
+
+                <strong>
+                    Mientras estás de vacaciones o en el trabajo
+                </strong>
+            </h2>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <!-- Image placeholder -->
+            <img class="img-fluid rounded-pill" src="{% static 'images/commons/cat_3.jpg' %}" alt="" srcset="">
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

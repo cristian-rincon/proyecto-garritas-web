@@ -1,0 +1,26 @@
+$primary-green: #006d77;
+$secondary-green: #83c5be;
+$success-green: #20c997;
+$dark-grey: #2f444e;
+$info-blue: #edf6f9;
+$warning-orange: #ffddd2;
+$danger-orange: #e29578;
+$light: #f8f9fa;
+$dark: #343a40;
+
+$project-font: 'Montserrat', sans-serif;
+
+$theme-colors: (
+  "primary":    $primary-green,
+  "secondary":  $secondary-green,
+  "success":    $success-green,
+  "info":       $info-blue,
+  "warning":    $warning-orange,
+  "danger":     $danger-orange,
+  "light":      $light,
+  "dark":       $dark
+);
+
+* {
+  font-family: $project-font;
+}

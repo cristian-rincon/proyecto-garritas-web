@@ -1,18 +1,33 @@
 {% extends "base.html" %}
 {% load static %}
-
+{% load i18n %}
 {% block title %}User: {{ object.username }}{% endblock %}
 
 {% block content %}
 <div class="container">
-
+<div class="row text-center">
+  <div class="col">
+    <h1>Mi perfil</h1>
+  </div>
+</div>
   <div class="row">
-    <div class="col-sm-12">
+    <div class="col-sm-12 col-md-6 offset-md-3">
 
-      <h2>{{ object.username }}</h2>
-      {% if object.name %}
-        <p>{{ object.name }}</p>
-      {% endif %}
+      <div class="card border-0">
+        <div class="card-body">
+          <h5 class="card-title">
+            Datos Básicos
+          </h5>
+          <p>username: {{ object.username }}</p>
+
+        {% if object.name %}
+            <p>Nombre: {{ object.name }}</p>
+            <a class="btn btn-primary rounded-pill" href="{% url 'users:update' %}" role="button"><i class="bi-pencil-square"></i>Actualizar datos de usuario</a>
+
+        {% endif %}
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -20,9 +35,16 @@
 <!-- Action buttons -->
 <div class="row">
 
-  <div class="col-sm-12">
-    <a class="btn btn-primary" href="{% url 'users:update' %}" role="button">My Info</a>
-    <a class="btn btn-primary" href="{% url 'account_email' %}" role="button">E-Mail</a>
+  <div class="col-sm-12 col-md-6 offset-md-3">
+    <div class="card border-0 mt-3">
+      <div class="card-body">
+        <h5 class="card-title">
+          Correo Electrónico
+        </h5>
+        <p>e-mail: {{ object.email }}</p>
+        <a class="btn btn-primary rounded-pill" href="{% url 'account_email' %}" role="button"><i class="bi-envelope"></i> {% translate "Update E-mail"%}</a>
+      </div>
+    </div>
     <!-- Your Stuff: Custom user template urls -->
   </div>
 

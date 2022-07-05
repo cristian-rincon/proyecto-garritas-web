@@ -1,1 +1,30 @@
 {% extends "base.html" %}
+{% load static i18n %}
+
+{% block content %}
+
+<section>
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-sm-12 col-md-8">
+                <h1 class="display-1 fw-bold">Acerca de</h1>
+                <p>
+                    Es un hotel especializado para gatos, ubicado en la ciudad de Bogotá.
+                    Contamos con CATSUITES independientes (habitaciones) de 9mts cúbicos
+                    donde tu gatito se sentirá cómodo y tranquilo.
+                    <br/>
+                    Cada espacio cuenta con rascadores de piso a techo, cubos de descanso
+                    y entretenimiento, bebedero tipo fuente con filtro de carbono, arenera,
+                    comedero, mini bodega de almacenamiento para que puedas dejar sus juguetes
+                    y alimento favorito.
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <!-- Image placeholder -->
+                <img class="img-fluid rounded-pill" src="{% static 'images/commons/cat_4.jpg' %}" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+</section>
+{% endblock %}
