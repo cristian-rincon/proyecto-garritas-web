@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=proyecto_garritas
+POSTGRES_USER=ibmssrsfQmNJQLoZjEXmHyPPqRLgehXl
+POSTGRES_PASSWORD=8ju1HH5h0iIc3c8eDslWlYL0fStaMsRPA5Tvqy1QtvLEyQAffE2semU2EKLveLBi
