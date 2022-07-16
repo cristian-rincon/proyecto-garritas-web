@@ -18,6 +18,7 @@ urlpatterns = [
     # User management
     path("users/", include("proyecto_garritas.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
+    path("suites/", include("proyecto_garritas.suites.urls", namespace="suites")),
     # Your stuff: custom urls includes go here
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 if settings.DEBUG:
