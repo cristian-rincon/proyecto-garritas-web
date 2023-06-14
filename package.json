@@ -18,7 +18,7 @@
     "gulp-uglify-es": "^3.0.0",
     "pixrem": "^5.0.0",
     "postcss": "^8.4.21",
-    "sass": "^1.59.3"
+    "sass": "^1.63.4"
   },
   "engines": {
     "node": "16"
